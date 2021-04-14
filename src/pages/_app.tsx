@@ -2,7 +2,10 @@ import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
 import { theme } from '../../styles/theme';
 
-function MyApp({ Component, pageProps }) {
+import 'swiper/swiper-bundle.css';
+import '../../styles/slider.scss';
+
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
