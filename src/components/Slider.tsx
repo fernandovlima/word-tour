@@ -1,4 +1,4 @@
-import { Image, Img } from '@chakra-ui/image';
+import {  Img } from '@chakra-ui/image';
 import { Box, Flex, Text } from '@chakra-ui/layout';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar } from 'swiper';
@@ -10,33 +10,33 @@ function Slider() {
   const slides = [
     {
       id: 1,
-      src: '/img/africa1.jpg',
-      header: 'Africa',
-      text: 'Natureza ',
+      src: '/img/slider/europe.png',
+      header: 'Europa',
+      text: 'O continente mais antigo',
     },
     {
       id: 2,
-      src: '/img/africa1.jpg',
-      header: 'Europa',
-      text: 'O continente mais antigo.',
+      src: '/img/slider/africa.png',
+      header: 'África',
+      text: 'Natureza por todo lugar',
     },
     {
       id: 3,
-      src: '/img/africa1.jpg',
-      header: 'Europa',
-      text: 'O continente mais antigo.',
+      src: '/img/slider/oceania.png',
+      header: 'Oceania',
+      text: 'Lindas ilhas e praias paradisiacas',
     },
     {
       id: 4,
-      src: '/img/africa1.jpg',
-      header: 'Europa',
-      text: 'O continente mais antigo.',
+      src: '/img/slider/south-america.png',
+      header: 'América do Sul',
+      text: 'Um mix de culturas',
     },
     {
       id: 5,
-      src: '/img/africa1.jpg',
-      header: 'Europa',
-      text: 'O continente mais antigo.',
+      src: '/img/slider/north-america.png',
+      header: 'América do Norte',
+      text: 'Entretenimento',
     },
   ];
 
@@ -73,7 +73,7 @@ function Slider() {
               >
                 <Text
                   as="h1"
-                  color="gray.200"
+                  color="gray.100"
                   fontWeight="700"
                   fontSize={['1.5rem', '2rem', '3rem']}
                   textAlign="center"
